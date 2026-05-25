@@ -1,0 +1,592 @@
+/* ===== TOP BAR ===== */
+.top-bar {
+    display: flex;
+    align-items: center;
+    padding: 12px 40px;
+    background: rgba(0, 0, 0, 0.6); /* dark glass */
+    backdrop-filter: blur(8px);
+    color: white;
+    font-size: 14px;
+}
+
+/* Center Logo Properly */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    margin-left: 400px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.4); /* transparent */
+}
+
+/* Menu Layout */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu Links */
+.navbar ul li a {
+    text-decoration: none;
+    color: white; /* FIX: visible on background */
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Underline Hover Effect */
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #00aaff;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+/* Hover Animation */
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.navbar ul li a:hover {
+    color: #00aaff;
+}
+
+/* ===== PLAN TRIP BUTTON ===== */
+.btn-book {
+    background: linear-gradient(45deg, #00aaff, #0088cc);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover */
+.btn-book:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/background2.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+     color: white;
+}
+
+/* Buttons container */
+.buttons {
+    display: flex;
+    justify-content: center; /* center buttons */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: #00aaff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+.btn-primary:hover {
+    background-color: #0088cc;
+    transform: scale(1.05);
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    padding: 12px 25px;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Book Button (Navbar) */
+.btn-book {
+    background-color: #00aaff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-book:hover {
+    background-color: #0088cc;
+}
+
+/* About Section */
+.about-bar {
+    width: 90%;
+    margin: 40px auto; /* no overlap */
+    background-color: #467bbf;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* About container */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Fields */
+.field {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.field input {
+    margin-top: 8px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    width: 200px;
+    background-color: #e6e6e6;
+}
+
+/* About Button */
+.about-btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    background: white;
+    color: #467bbf;
+}
+/* Destination Section */
+.destinations {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Cards Layout */
+.destination-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Card Design */
+.card {
+    width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    color: black;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Card Content */
+.card-content {
+    padding: 15px;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-10px);
+}
+/* Tour Section */
+.tours {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.tours h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Layout */
+.tour-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.tour-card {
+    width: 280px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    color: black;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+/* Image */
+.tour-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Content */
+.tour-content {
+    padding: 15px;
+}
+
+.price {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #00aaff;
+}
+
+/* Button */
+.tour-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #00aaff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tour-btn:hover {
+    background: #0088cc;
+}
+
+/* Hover effect */
+.tour-card:hover {
+    transform: translateY(-10px);
+}
+/* Blog Section */
+.blog {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Layout */
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.blog-card {
+    width: 280px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    color: black;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+/* Image */
+.blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Content */
+.blog-content {
+    padding: 15px;
+}
+
+/* Button */
+.blog-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #00aaff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.blog-btn:hover {
+    background: #0088cc;
+}
+
+/* Hover Effect */
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Layout */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Contact Info */
+.contact-info {
+    max-width: 300px;
+    text-align: left;
+}
+
+/* Form */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 250px;
+}
+/* Input focus effect */
+.field input:focus,
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 2px solid black;
+    box-shadow: 0 0 8px rgba(0,170,255,0.5);
+    background-color: white;
+}
+
+/* Button */
+.contact-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #00aaff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #0088cc;
+}
+/* Input focus effect */
+.field input:focus,
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 2px solid black;
+    box-shadow: 0 0 8px rgba(0,170,255,0.5);
+    background-color: white;
+}
+.field input {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+}
+
+.field input:focus {
+    border-bottom: 2px solid #00aaff;
+}
+/* ===== Contact Section ===== */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Layout */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Contact Info */
+.contact-info {
+    max-width: 300px;
+    text-align: left;
+}
+
+/* Form */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* ===== Inputs ===== */
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: 2px solid black;   /* default border */
+    outline: none;
+    width: 250px;
+    transition: 0.3s;
+}
+
+/* ===== Focus Effect (Highlight) ===== */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 2px solid #00aaff;   /* blue highlight */
+    box-shadow: 0 0 8px rgba(0,170,255,0.5);
+    background-color: white;
+}
+
+/* ===== Hover Effect ===== */
+.contact-form input:hover,
+.contact-form textarea:hover {
+    border: 2px solid #00aaff;
+}
+
+/* ===== Button ===== */
+.contact-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #00aaff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+.contact-btn:hover {
+    background: #0088cc;
+    transform: scale(1.05);
+}
+/* navvbar responsive */
+.navbar {
+    flex-wrap: wrap;
+}
+
+.navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media (max-width: 600px) {
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .about-container,
+    .destination-container,
+    .tour-container,
+    .blog-container,
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .field input {
+        width: 90%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 90%;
+    }
+}
+@media (max-width: 1024px) {
+
+    .about-container,
+    .destination-container,
+    .tour-container,
+    .blog-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 0;
+    }
+}
